@@ -1,0 +1,59 @@
+<script>
+    let a = parseFloat(prompt("Enter value of a:"));
+    let b = parseFloat(prompt("Enter value of b:"));
+    let user = prompt('+,-,*,/,%');
+
+
+    function add(x, y) {
+        return x + y;
+    }
+
+
+    function sub(x, y) {
+        return x - y;
+    }
+
+    function mul(x, y) {
+        return x * y;
+    }
+
+    function div(x,y){
+        return x/y;
+    }
+
+    function mod(x,y){
+        return x%y;
+    }
+
+    switch (user) {
+        case '+':
+            let addition = add(a, b);
+            document.write(`${a} - ${b} = ${addition}`);
+            break;
+
+        case '-':
+            let subtraction = sub(a, b);
+            document.write(`${a} - ${b} = ${subtraction}`);
+            break;
+
+        case '*':
+            let multiplication = mul(a, b);
+            document.write(`${a} x ${b} = ${multiplication}`);
+            break;
+
+        case '/':
+            let division = div(a,b);
+            document.write(`${a} / ${b} = ${division}`);
+            break;
+
+        case '%':
+            let modulo = mod(a,b);
+            document.write(`${a} % ${b} = ${modulo}`);
+            break;
+
+        default: 
+        document.write(`please enter proper sign`);
+    }
+
+
+</script>
